@@ -1,10 +1,10 @@
 module.exports = {
-  text: data => {
-    return { text: data.text, typing: !!data.typing }
+  message: data => {
+    return { text: data.message, typing: !!data.typing }
   },
 
-  'trivia-question': data => ({
-    text: data.question,
+  'queries': data => ({
+    text: data.query,
     quick_replies: data.choices.map(choice => `<${choice.payload}> ${choice.text}`),
     typing: data.typing || '2s'
   })

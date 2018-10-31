@@ -1,0 +1,75 @@
+[
+  {
+    "id": "message-MnB6Zs",
+    "formData": {
+      "message": "hey {{ event.text }} this is   Vamigo bot ",
+      "typing": true,
+      "text": "Hey {{event.text}} ! 👋Good to see you here.   Primarily, what I do is, help vamigos with their faq's."
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-29T10:37:36.137Z"
+  },
+  {
+    "id": "message-l~3ptK",
+    "formData": {
+      "message": "hello",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-29T11:30:15.421Z"
+  },
+  {
+    "id": "message-LCp88w",
+    "formData": {
+      "message": "{{ event.text }} is happy",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-29T12:12:13.396Z"
+  },
+  {
+    "id": "message-kZUDb6",
+    "formData": {
+      "message": "The trainings offered by the L&D department would be soft skills,technical, behavioural skills",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-29T12:16:45.263Z"
+  },
+  {
+    "id": "message-VREw05",
+    "formData": {
+      "message": "The certifications can be done based on the project and the project would suggest you to do that particular certification. After the certifying  in that particular course, the copy of the certificate should be submitted to the Hr team and then the amount will be remebuirsed.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T05:49:03.919Z"
+  },
+  {
+    "id": "message-aiM6p9",
+    "formData": {
+      "message": "please enter your full name",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T06:02:03.963Z"
+  },
+  {
+    "id": "message-Xoidwq",
+    "formData": {
+      "message": "please contact the L&d team for more information. thank you ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T07:21:03.560Z"
+  },
+  {
+    "id": "message-snxaQc",
+    "formData": {
+      "message": "It was a pleasure talking to you, have a great day ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-31T05:35:39.876Z"
+  }
+]

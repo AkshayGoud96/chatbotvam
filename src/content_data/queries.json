@@ -1,0 +1,38 @@
+[
+  {
+    "id": "queries-ahqdTU",
+    "formData": {
+      "query": "So that's me. Now that you are here, I'm guessing you must be, at the very least, curious about the services right?",
+      "types_of_queries": [
+        "Trainings",
+        "Certifications"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-29T10:53:37.858Z"
+  },
+  {
+    "id": "queries-ZAaN14",
+    "formData": {
+      "query": "This is the information available with me. does your query got resolved?",
+      "types_of_queries": [
+        "Yes it did",
+        "No i want some more information"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T07:09:33.918Z"
+  },
+  {
+    "id": "queries-LKiwWB",
+    "formData": {
+      "query": "That's great...!!! is there anything else i can help with?",
+      "types_of_queries": [
+        "yes",
+        "no"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T07:10:54.432Z"
+  }
+]

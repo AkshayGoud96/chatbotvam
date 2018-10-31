@@ -1,0 +1,142 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "0b373fb1cc",
+      "name": "operations",
+      "next": [
+        {
+          "condition": "state.trainings == true",
+          "node": "trainings"
+        },
+        {
+          "condition": "state.certifications == true",
+          "node": "certifications"
+        }
+      ],
+      "onEnter": [
+        "say #!queries-ahqdTU"
+      ],
+      "onReceive": [
+        "getUserTag {\"name\":\"queryChosen\",\"into\":\"queryChosen\"}",
+        "setUserTag {\"name\":\"queryChosen\",\"value\":\"event.text\"}",
+        "validateQuery {}"
+      ]
+    },
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "name": "entry",
+      "onEnter": [
+        "startGame {}",
+        "say #!message-aiM6p9"
+      ],
+      "onReceive": [
+        "say #!message-MnB6Zs",
+        "getUserTag {\"name\":\"fullname\",\"into\":\"fullname\"}",
+        "setUserTag {\"name\":\"fullname\",\"value\":\"event.text\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "operations"
+        }
+      ]
+    },
+    {
+      "id": "fc55a863a9",
+      "name": "reply_node",
+      "next": [
+        {
+          "condition": "state.yes == true",
+          "node": "operations"
+        },
+        {
+          "condition": "state.no == true",
+          "node": "lastnode"
+        }
+      ],
+      "onEnter": [
+        "say #!queries-LKiwWB"
+      ],
+      "onReceive": [
+        "getUserTag {\"name\":\"reply\",\"into\":\"reply\"}",
+        "setUserTag {\"name\":\"reply\",\"value\":\"event.text\"}",
+        "validateQuery {}"
+      ]
+    },
+    {
+      "id": "cc06779840",
+      "name": "reply_node2",
+      "next": [],
+      "onEnter": [
+        "say #!message-Xoidwq"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d922fb1d69",
+      "name": "trainings",
+      "next": [
+        {
+          "condition": "state.querySolved == true",
+          "node": "reply_node"
+        },
+        {
+          "condition": "state.queryNotSolved == true",
+          "node": "reply_node2"
+        }
+      ],
+      "onEnter": [
+        "say #!message-kZUDb6",
+        "say #!queries-ZAaN14"
+      ],
+      "onReceive": [
+        "getUserTag {\"name\":\"reply\",\"into\":\"reply\"}",
+        "setUserTag {\"name\":\"reply\",\"value\":\"event.text\"}",
+        "validateQuery {}"
+      ]
+    },
+    {
+      "id": "521620085b",
+      "name": "certifications",
+      "next": [
+        {
+          "condition": "state.querySolved == true",
+          "node": "reply_node"
+        },
+        {
+          "condition": "state.queryNotSolved == true",
+          "node": "reply_node2"
+        }
+      ],
+      "onEnter": [
+        "say #!message-VREw05",
+        "say #!queries-ZAaN14"
+      ],
+      "onReceive": [
+        "getUserTag {\"name\":\"reply\",\"into\":\"reply\"}",
+        "setUserTag {\"name\":\"reply\",\"value\":\"event.text\"}",
+        "validateQuery {}"
+      ]
+    },
+    {
+      "id": "747add8fe2",
+      "name": "lastnode",
+      "next": [
+        {
+          "condition": "true",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!message-snxaQc"
+      ],
+      "onReceive": null
+    }
+  ]
+}
